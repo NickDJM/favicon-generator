@@ -1,0 +1,19 @@
+{
+  "name": "favicon-generator",
+  "version": "1.0.0",
+  "description": "A tool to quickly generate various icons needed for development.",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickDJM/favicon-generator.git"
+  },
+  "author": "Nick Milton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickDJM/favicon-generator/issues"
+  },
+  "homepage": "https://github.com/NickDJM/favicon-generator#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
