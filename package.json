@@ -8,7 +8,8 @@
     "eslint": "eslint --ext .js --fix .",
     "prettier": "prettier '**/*.js' --write --ignore-path .eslintignore",
     "lint": "npm run eslint && npm run prettier",
-    "release": "standard-version"
+    "release": "standard-version",
+    "generate": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,12 @@
     "url": "https://github.com/NickDJM/favicon-generator/issues"
   },
   "homepage": "https://github.com/NickDJM/favicon-generator#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-to-ico": "^1.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
