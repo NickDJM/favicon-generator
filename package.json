@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A tool to quickly generate various icons needed for development.",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install",
+    "eslint": "eslint --ext .js --fix .",
+    "prettier": "prettier '**/*.js' --write --ignore-path .eslintignore",
+    "lint": "npm run eslint && npm run prettier",
+    "release": "standard-version"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NickDJM/favicon-generator.git"
@@ -14,6 +20,14 @@
     "url": "https://github.com/NickDJM/favicon-generator/issues"
   },
   "homepage": "https://github.com/NickDJM/favicon-generator#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.1"
+  }
 }
