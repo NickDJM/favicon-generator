@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "A tool to quickly generate various icons needed for development.",
   "private": true,
+  "type": "module",
   "scripts": {
-    "prepare": "husky install",
-    "eslint": "eslint --ext .js --fix .",
-    "prettier": "prettier '**/*.js' --write --ignore-path .eslintignore",
-    "lint": "npm run eslint && npm run prettier",
-    "release": "standard-version",
-    "generate": "gulp"
+    "prepare": "husky",
+    "eslint": "eslint",
+    "prettier": "prettier '**/*.{js,mjs,cjs}'",
+    "lint": "npm run eslint -- --fix && npm run prettier -- --write",
+    "release": "commit-and-tag-release",
+    "generate": "node scripts/generate-icons.js"
   },
   "repository": {
     "type": "git",
@@ -22,19 +23,17 @@
   },
   "homepage": "https://github.com/NickDJM/favicon-generator#readme",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-to-ico": "^1.0.0"
+    "favicons": "^7.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "standard-version": "^9.3.1"
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.2.1",
+    "commit-and-tag-version": "^12.5.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^16.5.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.2"
   }
 }

@@ -1,5 +1,0 @@
-# Auto-generated directories.
-node_modules
-
-# Do not ignore config files.
-!.*.js

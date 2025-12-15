@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   types: [
     {
       type: "feat",
@@ -57,3 +57,5 @@ module.exports = {
     },
   ],
 };
+
+module.exports = config;
