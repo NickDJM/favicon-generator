@@ -199,7 +199,7 @@
   "overrideCommand": true,
 
   // Install npm build tools automatically.
-  "postStartCommand": "test -f /var/www/html/node_modules/.package-lock.json || (npm i -y; npm run build)",
+  "postStartCommand": "test -f /var/www/html/node_modules/.package-lock.json || npm i -y",
 
   // Fix permissions on the project directory.
   "postAttachCommand": "/usr/bin/git config --global --add safe.directory /var/www/html",
