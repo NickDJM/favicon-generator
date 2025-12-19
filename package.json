@@ -1,6 +1,6 @@
 {
   "name": "favicon-generator",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A tool to quickly generate various icons needed for development.",
   "private": true,
   "type": "module",
