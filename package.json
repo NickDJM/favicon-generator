@@ -9,7 +9,7 @@
     "eslint": "eslint",
     "prettier": "prettier '**/*.{js,mjs,cjs}'",
     "lint": "npm run eslint -- --fix && npm run prettier -- --write",
-    "release": "commit-and-tag-release",
+    "release": "commit-and-tag-version",
     "generate": "node scripts/generate-icons.js"
   },
   "repository": {
